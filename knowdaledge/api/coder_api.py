@@ -71,6 +71,6 @@ class LoginCoderView(views.APIView):
                 return Response(result.data, status=status.HTTP_200_OK)
 
             return Response(
-                {'detail': "Invalid credentials provided."}, status=status.HTTP_400_BAD_REQUEST)
+                {'detail': "Invalid credentials provided."}, status=status.HTTP_401_UNAUTHORIZED)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
