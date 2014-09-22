@@ -12,7 +12,7 @@ RUN mkdir /code
 
 WORKDIR /code
 
-ADD ./knowledgium/requirements.txt /code/
+ADD requirements.txt /code/
 ADD fig.yml /code/
 RUN pip install -r requirements.txt
 ADD . /code/
