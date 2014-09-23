@@ -1,16 +1,14 @@
 db:
-    image: ochardup/postgresql
+    image: postgres
     ports:
         - 5432:5432
 
 web:
-    build: ./knowledgium/knowdaledge
-    command: gunicorn knowdaledge.wsgi --bind 0.0.0.0:8000
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
         - .:/code
     ports:
-        - 5000:5000
+        - 8000:8000
     links:
         - db
-    environment:
-        -DEBUG=True
