@@ -77,6 +77,7 @@ Vokal hack day stuff.
 
 **Notes:**
 - the `HTTP_AUTHORIZATION` header will have to be set to the user's token in the request
+- ex: `Token sahfdlhsafh02373274027402742128hsdfg8s83` in the header
 
 **Status Codes:**
 - `200` if successful
