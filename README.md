@@ -59,3 +59,25 @@ Vokal hack day stuff.
 - `200` if successfully logged in
 - `400` if bad data were provided
 - `401` if credentials are invalid
+
+### Current Coder
+
+**GET:** `/api/coder/`
+
+**Body:**
+```json
+{
+    "id": 1,
+    "email": "hibiki@kamenrider.co.jp",
+    "first_name": "KR",
+    "last_name": "Hibiki",
+    "created": "YYYY-MM-DD"
+}
+```
+
+**Notes:**
+- the `HTTP_AUTHORIZATION` header will have to be set to the user's token in the request
+
+**Status Codes:**
+- `200` if successful
+- `401` if unauthorized
