@@ -64,7 +64,7 @@ WSGI_APPLICATION = 'knowdaledge.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgres://postgres:postgres@localhost:5432/knowledge')
+        default='postgres://postgres:postgres@db_1:5432/postgres')
 }
 
 # Internationalization
