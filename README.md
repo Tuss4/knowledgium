@@ -89,7 +89,7 @@ Vokal hack day stuff.
 
 **POST:** `/api/category/all/`
 
-***Body:***
+**Body:**
 ```json
 {
     "title": "Japanese Live Action"
