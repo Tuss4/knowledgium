@@ -82,3 +82,7 @@ Vokal hack day stuff.
 **Status Codes:**
 - `200` if successful
 - `401` if unauthorized
+
+## Content
+
+### Categories
