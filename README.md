@@ -85,4 +85,39 @@ Vokal hack day stuff.
 
 ## Content
 
-### Categories
+### Create a Category
+
+**POST:** `/api/category/all/`
+
+***Body:***
+```json
+{
+    "title": "Japanese Live Action"
+}
+```
+
+**Notes:**
+- Set `HTTP_AUTHORIZATION` header here
+- Only users with `is_staff` set to `True` (admins) can create categories
+
+**Status Codes:**
+- `201` if created
+- `403` if non-admin tries to create
+
+### List all Categories
+
+**GET:** `/api/category/all/`
+
+**Response:**
+```json
+[
+    {
+        "id": 1,
+        "title": "Japanese Live Action"
+    },
+    {
+        "id": 2,
+        "title": "Anime"
+    },
+]
+```
