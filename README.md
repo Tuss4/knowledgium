@@ -121,3 +121,6 @@ Vokal hack day stuff.
     },
 ]
 ```
+
+**Status Codes:**
+-`200` success
