@@ -6,9 +6,11 @@ from .models import Coder
 
 class CoderSerializer(serializers.ModelSerializer):
 
+    full_name = serializers.Field(source='get_full_name')
+
     class Meta:
         model = Coder
-        fields = ('id', 'email', 'first_name', 'last_name', 'created')
+        fields = ('id', 'email', 'first_name', 'last_name', 'created', 'full_name')
 
 
 class RegisterSerializer(serializers.Serializer):

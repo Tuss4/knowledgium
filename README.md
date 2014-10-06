@@ -124,3 +124,7 @@ Vokal hack day stuff.
 
 **Status Codes:**
 -`200` success
+
+### Create Content
+
+**POST:** `/api/content/`
