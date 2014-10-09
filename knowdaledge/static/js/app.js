@@ -14,6 +14,9 @@ knowledgiumApp.config(['$routeProvider',
                 templateUrl: 'static/partials/post_detail.html',
                 controller: 'PostDetailCtrl'
             }).
+            when('/login', {
+                templateUrl: 'static/partials/login.html',
+            }).
             otherwise({
                 redirectTo: '/posts'
             })
