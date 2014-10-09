@@ -7,11 +7,11 @@ knowledgiumApp.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
             when('/posts', {
-                templateUrl: 'partials/post_list.html',
+                templateUrl: 'static/partials/post_list.html',
                 controller: 'PostListCtrl'
             }).
             when('/posts/:postId', {
-                templateUrl: 'partials/post_detail.html',
+                templateUrl: 'static/partials/post_detail.html',
                 controller: 'PostDetailCtrl'
             }).
             otherwise({
